@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multipurpose Calculator</title>
+    <link rel="stylesheet" type="text/css" href="perimeterCalc.css">
+</head>
+<body>
+    <ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="areaCalc.html">Area Calculator</a></li>
+            <li><a href="perimeterCalc.html">Perimeter Calculator</a></li>
+        </ul>
+    </ul>
+    
+    <div style="margin-left:25%;padding:1px 16px;height:900px;">
+        <h1 id="Heading">NUMBER BASE CALCULATOR</h1>
+
+        <h1>Binary To Decimal</h1>
+        <input type="text" id="bDecimal" placeholder="Binary Number">     
+        <button type="button" onclick="binaryToDecimal()">Convert</button>
+
+        <p id="bToDecimal">Decimal: </p>
+
+        <h1>Decimal To Binary</h1>
+        <input type="text" id="dBinary" placeholder="Decimal Number">     
+        <button type="button" onclick="decimalToBinary()">Convert</button>
+
+        <p id="dToBinary">Binary: </p>
+
+        <h1>Decimal To Hex</h1>
+        <input type="text" id="dHex" placeholder="Decimal Number">     
+        <button type="button" onclick="decimalToHex()">Convert</button>
+
+        <p id="dToHex">Hex: </p>
+
+        <h1>Hex To Decimal</h1>
+        <input type="text" id="hDecimal" placeholder="Hex Value">     
+        <button type="button" onclick="hexToDecimal()">Convert</button>
+
+        <p id="hToDecimal">Decimal: </p>
+
+        </div>
+    </div>
+<script 
+src="numberBase.js">
+</script>
+</body>
+</html>

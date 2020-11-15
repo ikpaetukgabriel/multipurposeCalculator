@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multipurpose Calculator</title>
+    <link rel="stylesheet" type="text/css" href="areaCalc.css">
+</head>
+
+<body>
+    <ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="numberBase.html">Number System Calculator</a></li>
+            <li><a href="perimeterCalc.html">Perimeter Calculator</a></li>
+        </ul>
+    </ul>
+    
+    <div style="margin-left:25%;padding:1px 16px;height:900px;">
+        <h1 id="Heading">AREA CALCULATOR</h1>
+        <h1>Square</h1>
+        <input type="text" id="sLength" placeholder="length(meters)">     
+        <button type="button" onclick="squareArea()">Calculate</button>
+
+        <p id="sArea">Area: </p>
+
+        <h1>Rectangle</h1>
+        <input type="text" id="rLength" placeholder="length(meters)">
+        <input type="text" id="rWidth" placeholder="width(meters)">
+        
+        <button type="button" onclick="rectangleArea()">Calculate</button>
+        <p id="rArea">Area: </p>
+
+
+        <h1>Triangle</h1>
+        <input type="text" id="tBase" placeholder="base(meters)">
+        <input type="text" id="tHeight" placeholder="height(meters)">
+        
+        <button type="button" onclick="triangleArea()">Calculate</button>
+        <p id="tArea">Area: </p>
+
+
+        <h1>Circle</h1>
+        <input type="text" id="cRadius" placeholder="radius(meters)"> 
+        <button type="button" onclick="circleArea()">Calculate</button>
+        <p id="cArea">Area: </p>
+        </div>
+    </div>
+<script 
+src="areaCalc.js">
+</script>
+</body>
+</html>

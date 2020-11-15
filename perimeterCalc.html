@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multipurpose Calculator</title>
+    <link rel="stylesheet" type="text/css" href="perimeterCalc.css">
+</head>
+<body>
+    <ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="numberBase.html">Number System Calculator</a></li>
+            <li><a href="areaCalc.html">Area Calculator</a></li>
+        </ul>
+    </ul>
+    
+    <div style="margin-left:25%;padding:1px 16px;height:900px;">
+        <h1 id="Heading">PERIMETER CALCULATOR</h1>
+        <h1>Square</h1>
+        <input type="text" id="sLength" placeholder="length(meters)">     
+        <button type="button" onclick="squarePerimeter()">Calculate</button>
+
+        <p id="sPerimeter">Perimeter: </p>
+
+        <h1>Rectangle</h1>
+        <input type="text" id="rLength" placeholder="length(meters)">
+        <input type="text" id="rWidth" placeholder="width(meters)">
+        
+        <button type="button" onclick="rectanglePerimeter()">Calculate</button>
+        <p id="rPerimeter">Perimeter: </p>
+
+
+        <h1>Triangle</h1>
+        <input type="text" id="sideA" placeholder="side A(meters)">
+        <input type="text" id="sideB" placeholder="side B(meters)">
+        <input type="text" id="sideC" placeholder="side C(meters)">
+        
+        <button type="button" onclick="trianglePerimeter()">Calculate</button>
+        <p id="tPerimeter">Perimeter: </p>
+
+
+        <h1>Circle</h1>
+        <input type="text" id="cRadius" placeholder="radius(meters)"> 
+        <button type="button" onclick="circlePerimeter()">Calculate</button>
+        <p id="cPerimeter">Perimeter: </p>
+        </div>
+    </div>
+<script 
+src="perimeterCalc.js">
+</script>
+</body>
+</html>
